@@ -1,0 +1,17 @@
+@echo off
+setlocal
+cd /d "%~dp0"
+if not exist ".venv\Scripts\python.exe" (
+  py -3.12 -m venv .venv
+  if errorlevel 1 goto failed
+)
+"%~dp0.venv\Scripts\python.exe" -m pip install -r "%~dp0requirements.txt"
+if errorlevel 1 goto failed
+echo Setup complete. Open Start BehaviorGuard.cmd.
+pause
+exit /b 0
+
+:failed
+echo Setup failed. Use 64-bit Python 3.12 with the Python launcher and Tkinter installed.
+pause
+exit /b 1

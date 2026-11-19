@@ -1,0 +1,10 @@
+data/
+__pycache__/
+*.pyc
+.packages/
+.venv/
+runtime/
+*.apk
+*.idsig
+/*.zip
+startup-error.log

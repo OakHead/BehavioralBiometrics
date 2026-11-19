@@ -1,0 +1,10 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">@font/chakra_petch</item>
+        <item name="android:colorAccent">#C4A3FF</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">#0E0D18</item>
+        <item name="android:windowBackground">#0E0D18</item>
+        <item name="android:colorControlNormal">#BCB5D0</item>
+    </style>
+</resources>
